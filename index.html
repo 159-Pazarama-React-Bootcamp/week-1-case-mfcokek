@@ -6,13 +6,17 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>159. Patika, Pazarama React Bootcamp - Odev 1</title>
+    
     </head>
+
     <body>
-        <p>Lütfen Kart Numaranızı Giriniz</p>
-        <input id="numb">
+        <p>Lütfen Kart Numaranızı ve Son Kullanma Tarihini Giriniz</p>
+        <input id="numb" placeholder="1234-56... veya 123456...">
+        <input type="month" id="tarih">
         <button type="button" onclick=isCreditCardNumberValid()>Sorgula</button>
         <p id="demo"></p>
         
+
         <script src="index.js"></script>
     </body>
 </html>
