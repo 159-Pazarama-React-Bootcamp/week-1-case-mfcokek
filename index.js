@@ -26,11 +26,10 @@ const isCreditCardNumberValid = () => {
     only = +cardNumber.toString()[1];
     if(sum>=16 && cardNumber%2==0 && sum/only != 16 ){
 
-      //Tarih karşılaştırması yapılır
-      if(currentTıme.getFullYear() < date.slice(0,4)){
+      
+      if(currentTıme.getFullYear() < +date.slice(0,4)){
         return document.getElementById("demo").innerHTML = true;
       }
-      //Aynı Sene olanlar için ay kontrolü yapılır
       else if(currentTıme.getFullYear() == date.slice(0,4)){
         if(currentTıme.getMonth() < date.slice(5,7)){
           return document.getElementById("demo").innerHTML = true;
